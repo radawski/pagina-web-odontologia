@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg-color-blanco{
+    background-color: #F3F9FB;
+}
+
+/* estilos mobile */
+
+/* INICIO */
+.main-index{
+    height: 1280px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-index p{
+    font-size: large;
+    max-width: 50%;
+    justify-content: center;
+}
+.main-index{
+    margin: 0;
+    background: url(/img/BeFunky-photo.jpg) no-repeat center center fixed;
+    background-size: cover;
+    max-height: 800px;
+}
+
+/* ODONTOLOGOS */
+
+.main-odontologos{
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    
+    grid-template-areas: 
+    "uno"
+    "dos"
+    "tres"
+    "cuatro";
+   align-items: center;
+   justify-items: left;
+   margin-left: 10%;
+   margin-right: 10%;
+   margin-top: 5%;
+}
+.main-odontologos .item1{
+    grid-area: uno;
+}
+.main-odontologos .item1 h2{
+    font-size: 40px;
+}
+.main-odontologos .item2{
+    grid-area: dos;
+    font-size: 30px;
+    margin: 0%;
+}
+.main-odontologos .item3{
+    grid-area: tres;
+    margin: 0%;
+}
+.main-odontologos .item3 li{
+    font-size: 30px;
+    color: #63BBDB;
+}
+.main-odontologos .item4{
+    grid-area: cuatro;
+    margin: 2%;
+}
+.item4 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+}
+footer{
+    position: relative;
+    bottom: 0%;
+    width: 100%;
+}
+/* media query de desktop */
+/* pagina odontologos */
+@media screen and (min-width: 1024px){
+    
+    .main-odontologos{
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr;
+        
+        grid-template-areas: 
+        "uno cuatro"
+        "dos cuatro"
+        "tres cuatro";
+        align-items: center;
+        justify-items: left;
+ 
+    }
+    .main-odontologos .item1{
+        grid-area: uno;
+        width: 100%;
+    }
+    .main-odontologos .item1 h2{
+    
+    }
+    .main-odontologos .item2{
+        grid-area: dos;
+        margin-right: 10%;
+        width: 100%;
+    }
+    .main-odontologos .item3{
+        width: 100%;
+    }
+    .main-odontologos .item3 li{
+        font-size: 30px;
+        color: #63BBDB;
+    }
+    .main-odontologos .item4{
+        justify-items: center;
+        align-items: center;
+    }
+}
+
