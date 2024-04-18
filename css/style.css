@@ -7,9 +7,12 @@
 .bg-color-blanco{
     background-color: #F3F9FB;
 }
-
-footer{
+body{
     position: relative;
+    min-height: 100vh;
+}
+footer{
+    position: absolute;
     bottom: 0%;
     width: 100%;
 }
@@ -83,33 +86,24 @@ footer{
     height: 100%;
     object-fit: cover;
     border-radius: 5%;
-
+}
+.body-odontologos{
+    padding-bottom: 5em;
 }
 
 /* TRATAMIENTOS */
 .main-tratamientos .titulo-tratamientos{
-    width: 60%;
-    margin: 5% 10%;
+
 }
 .main-tratamientos .p-tratamientos{
     color: #63BBDB;
-    width: 80%;
-    margin: 0% 10%;
-    font-size: 30px;
-    justify-items: center;
-    
 }
-
 .contenedor-main-tratamientos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-    margin: 5% 10%;
-    row-gap: 2em;
+    margin: 1% 10% ;
 }
-
+.body-tratamientos{
+    padding-bottom: 5em;
+}
 
 
 /* media query de desktop */
@@ -154,7 +148,7 @@ footer{
     }
 
     /* pagina tratamientos */
-    
+    /* media query hecho con botstrap */
 }
 
 
