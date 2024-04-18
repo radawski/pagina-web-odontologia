@@ -8,6 +8,12 @@
     background-color: #F3F9FB;
 }
 
+footer{
+    position: relative;
+    bottom: 0%;
+    width: 100%;
+}
+
 /* estilos mobile */
 
 /* INICIO */
@@ -77,16 +83,39 @@
     height: 100%;
     object-fit: cover;
     border-radius: 5%;
+
 }
-footer{
-    position: relative;
-    bottom: 0%;
-    width: 100%;
+
+/* TRATAMIENTOS */
+.main-tratamientos .titulo-tratamientos{
+    width: 60%;
+    margin: 5% 10%;
 }
-/* media query de desktop */
-/* pagina odontologos */
-@media screen and (min-width: 1024px){
+.main-tratamientos .p-tratamientos{
+    color: #63BBDB;
+    width: 80%;
+    margin: 0% 10%;
+    font-size: 30px;
+    justify-items: center;
     
+}
+
+.contenedor-main-tratamientos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 5% 10%;
+    row-gap: 2em;
+}
+
+
+
+/* media query de desktop */
+
+@media screen and (min-width: 1024px){
+    /* pagina odontologos */
     .main-odontologos{
         display: grid;
         grid-template-columns: 1fr 1fr; 
@@ -97,7 +126,7 @@ footer{
         "dos cuatro"
         "tres cuatro";
         align-items: center;
-        justify-items: left;
+        justify-items: stretch;
  
     }
     .main-odontologos .item1{
@@ -123,5 +152,9 @@ footer{
         justify-items: center;
         align-items: center;
     }
+
+    /* pagina tratamientos */
+    
 }
+
 
