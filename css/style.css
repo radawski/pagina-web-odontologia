@@ -92,9 +92,6 @@ footer{
 }
 
 /* TRATAMIENTOS */
-.main-tratamientos .titulo-tratamientos{
-
-}
 .main-tratamientos .p-tratamientos{
     color: #63BBDB;
 }
@@ -127,9 +124,7 @@ footer{
         grid-area: uno;
         width: 100%;
     }
-    .main-odontologos .item1 h2{
     
-    }
     .main-odontologos .item2{
         grid-area: dos;
         margin-right: 10%;
