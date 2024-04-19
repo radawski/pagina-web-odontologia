@@ -5,7 +5,7 @@
 }
 
 .bg-color-blanco{
-    background-color: #F3F9FB;
+    background-color: #F3F9FB; 
 }
 body{
     position: relative;
@@ -45,14 +45,14 @@ footer{
 .main-odontologos{
     display: grid;
     grid-template-columns: 1fr; 
-    grid-template-rows: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
     
     grid-template-areas: 
     "uno"
     "dos"
     "tres"
     "cuatro";
-   align-items: center;
+   align-items:center;
    justify-items: left;
    margin-left: 10%;
    margin-right: 10%;
@@ -62,7 +62,7 @@ footer{
     grid-area: uno;
 }
 .main-odontologos .item1 h2{
-    font-size: 40px;
+    font-size: 50px;
 }
 .main-odontologos .item2{
     grid-area: dos;
@@ -74,9 +74,10 @@ footer{
     margin: 0%;
 }
 .main-odontologos .item3 li{
-    font-size: 30px;
+    font-size: 40px;
     color: #63BBDB;
 }
+
 .main-odontologos .item4{
     grid-area: cuatro;
     margin: 2%;
@@ -102,6 +103,17 @@ footer{
     padding-bottom: 5em;
 }
 
+/* DOCTOR */
+.main-doctor{
+    margin: 40px;
+}
+.contenedor-doctor{
+    display: grid;
+    grid-gap: 20px;
+}
+.body-doctor{
+    padding-bottom: 2em;
+}
 
 /* media query de desktop */
 
@@ -124,7 +136,7 @@ footer{
         grid-area: uno;
         width: 100%;
     }
-    
+
     .main-odontologos .item2{
         grid-area: dos;
         margin-right: 10%;
@@ -142,8 +154,28 @@ footer{
         align-items: center;
     }
 
+    
     /* pagina tratamientos */
     /* media query hecho con botstrap */
 }
 
 
+@media screen and (min-width: 700px){
+    .contenedor-doctor{
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 40px;
+
+    }
+    .contenedor-doctor .item h2{
+        font-size: 40px;
+    }
+    .contenedor-doctor .item{
+        font-size: 40px;
+        height: 100%;
+    }
+    .body-doctor{
+        padding-bottom: 3em;
+    }
+
+}
