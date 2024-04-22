@@ -77,7 +77,6 @@ footer{
     font-size: 40px;
     color: #63BBDB;
 }
-
 .main-odontologos .item4{
     grid-area: cuatro;
     margin: 2%;
@@ -120,7 +119,7 @@ footer{
 }
 /* media query de desktop */
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 961px){
     /* pagina odontologos */
     .main-odontologos{
         display: grid;
@@ -155,12 +154,36 @@ footer{
     .main-odontologos .item4{
         justify-items: center;
         align-items: center;
-    }
-
-    
-    
+    }  
 }
 
+@media screen and (min-width: 700px) and (max-width: 960px){
+    /* pagina odontologos */
+    .main-odontologos{
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr;
+        
+        grid-template-areas: 
+        "uno dos"
+        "cuatro cuatro"
+        "tres tres";
+        align-items: center;
+        justify-items: center;
+        
+    }
+    .main-odontologos .item-odon h2{
+        margin: 0% 20%;
+        font-size: 35px;
+    }
+    .main-odontologos .item-odon li{
+        font-size: 35px;
+    }
+    .main-odontologos .item-odon p{
+        font-size: 25px;
+    }
+   
+}
 
 @media screen and (min-width: 700px){
     .contenedor-doctor{
