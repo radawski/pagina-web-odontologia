@@ -18,6 +18,11 @@
         max-width: 50%;
         justify-content: center;
     }
+
+    a:hover{
+        animation: pulse; 
+        animation-duration: 2s; 
+    }
 }
 
 // odontologos
@@ -83,10 +88,15 @@
 }
 .contenedor-main-tratamientos{
     margin: 1% 10% ;
+    .card:hover{
+        scale: 1.1;
+        transition: all 0.2s; 
+    }
 }
 .body-tratamientos{
     padding-bottom: 5em;
 }
+
 
 // doctor
 .main-doctor{
@@ -100,6 +110,17 @@
 }
 .body-doctor{
     padding-bottom: 2em;
+}
+
+.scale-up-vertical-center{
+    animation:scale-up-vertical-center 0.4s
+} 
+
+@keyframes scale-up-vertical-center{
+    0%{transform:scaleY(.2)
+    }
+    100%{transform:scaleY(1)
+    }
 }
 
 // ubicacion
