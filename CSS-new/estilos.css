@@ -41,4 +41,49 @@ footer {
   justify-content: center;
 }
 
+.main-odontologos {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "uno" "dos" "tres" "cuatro";
+  align-items: center;
+  justify-items: left;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+}
+.main-odontologos .item1 {
+  grid-area: uno;
+}
+.main-odontologos .item1 h2 {
+  font-size: 50px;
+}
+.main-odontologos .item2 {
+  grid-area: dos;
+  font-size: 30px;
+  margin: 0%;
+}
+.main-odontologos .item3 {
+  grid-area: tres;
+  margin: 0%;
+}
+.main-odontologos .item3 li {
+  font-size: 40px;
+  color: #63BBDB;
+}
+.main-odontologos .item4 {
+  grid-area: cuatro;
+  margin: 2%;
+}
+.main-odontologos .item4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5%;
+}
+
+.body-odontologos {
+  padding-bottom: 5em;
+}
+
 /*# sourceMappingURL=estilos.css.map */
