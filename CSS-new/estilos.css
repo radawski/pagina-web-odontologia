@@ -86,4 +86,16 @@ footer {
   padding-bottom: 5em;
 }
 
+.main-tratamientos .p-tratamientos {
+  color: #63BBDB;
+}
+
+.contenedor-main-tratamientos {
+  margin: 1% 10%;
+}
+
+.body-tratamientos {
+  padding-bottom: 5em;
+}
+
 /*# sourceMappingURL=estilos.css.map */
