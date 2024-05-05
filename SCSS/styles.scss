@@ -1,5 +1,5 @@
 @import '_basicos';
-
+// ESTILOS MOBILE
 // index
 .main-index{
     height: 1280px;
@@ -86,4 +86,20 @@
 }
 .body-tratamientos{
     padding-bottom: 5em;
+}
+
+// doctor
+.main-doctor{
+    margin: 40px;
+}
+.contenedor-doctor{
+    display: grid;
+    grid-gap: 20px;
+}
+.body-doctor{
+    padding-bottom: 2em;
+}
+
+.body-ubicacion{
+    padding-bottom: 2em;
 }
